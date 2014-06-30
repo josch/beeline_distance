@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta http-equiv=content-type content="text/html; charset=UTF-8" />
+<title>Google Maps Distance Calculator</title>
+</head>
+<body>
+<center>
+<h1>Google Maps Distance Calculator</h1>
+Search For Location : <input name="goto" id="goto" type="text" onKeyPress="return submitenter(this,event);"/> 
+
+<div id="map_canvas" style="width: 95%; height: 800px"></div>
+
+<p>Total Distance <input style="display: inline;" id="distance" type="text" size="12" value="0.000"/> meters</p>
+<p>
+<input class="custombutton" type="button" value="Clear Last Point" onclick="clearLastLeg();"/>
+<input class="custombutton" type="button" value="Clear All" onclick="clearMap();"/>
+</p>
+
+</center>
+
+<script type="text/javascript" src="http://www.google.com/uds/api?file=uds.js&v=1.0"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="distance.js"></script>
+
+</body>
+</html>
